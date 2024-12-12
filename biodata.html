@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo-BSL.jpg" alt="Logo Lembang">
+<body class="bg-gray-50 font-sans text-gray-800">
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="logo-BSL.jpg" alt="Logo Lembang" class="h-12">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="bolulembang.html" class="hover:text-gray-300">BERANDA</a></li>
+                    <li><a href="produk.html" class="hover:text-gray-300">PRODUK</a></li>
+                    <li><a href="biodata.html" class="hover:text-gray-300">BIODATA</a></li>
+                    <li><a href="contact_us.html" class="hover:text-gray-300">CONTACT US</a></li>
+                    <li><a href="randompage.html" class="hover:text-gray-300">RANDOM PAGE</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">BERANDA</a></li>
-                <li><a href="shop.html">PRODUK</a></li>
-                <li><a href="biodata.html">BIODATA</a></li>
-                <li><a href="contact_us.html">CONTACT US</a></li>
-                <li><a href="randompage.html">RANDOM PAGE</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section class="produk-pilihan">
-        <h2>Biodata</h2>
-        <div class="produk-container">
-            <div class="produk">
-                <img src="fotoryan.jpg" alt="Foto Ryan">
-                <h3>Asaryant Sabatino Talarima</h3>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Biodata</h2>
+            <div class="max-w-xs mx-auto bg-white p-6 rounded-lg shadow-lg">
+                <img src="fotoryan.jpg" alt="Foto Ryan" class="w-full rounded-full mb-4">
+                <h3 class="text-xl font-semibold">Asaryant Sabatino Talarima</h3>
                 <p><strong>NIM:</strong> 123456789</p>
                 <p><strong>Fakultas:</strong> Teknologi Informasi</p>
                 <p><strong>Hobi:</strong> Membaca, Coding, Bermain Game</p>
@@ -36,28 +39,30 @@
         </div>
     </section>
 
-    <section class="short-data">
-        <h2>Testimonial</h2>
-        <div class="SD-container">
-            <div class="data-item">
-                <div class="data-text">
-                    <p>Salah satu pengalaman terbaik saya di kelas ini adalah ketika saya belajar dasar-dasar pengembangan web. Saya sangat menikmati belajar HTML dan CSS karena ini memberikan dasar yang kuat untuk memahami bagaimana membangun halaman web yang responsif.</p>
-                </div>
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Testimonial</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <p class="text-gray-700">Salah satu pengalaman terbaik saya di kelas ini adalah ketika saya belajar dasar-dasar pengembangan web. Saya sangat menikmati belajar HTML dan CSS karena ini memberikan dasar yang kuat untuk memahami bagaimana membangun halaman web yang responsif.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="link">
-                <a href="https://fti.unai.edu/" target="_blank" class="normal-text">FTI UNAI</a>
-                <a href="https://unai.edu/" target="_blank" class="normal-text">UNAI Website</a>
-                <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="normal-text">Jurnal Teika</a>
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
             </div>
             <p>&copy; 2024 Asaryant Sabatino Talarima</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank"><img src="facebook-logo.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank">
+                    <img src="facebook-logo.png" alt="Facebook" class="h-6">
+                </a>
+                <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank">
+                    <img src="instagram-logo.png" alt="Instagram" class="h-6">
+                </a>
             </div>
         </div>
     </footer>
