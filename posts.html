@@ -7,12 +7,15 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        // Fetching posts from the JSONPlaceholder API using Fetch API
         document.addEventListener('DOMContentLoaded', () => {
             const postContainer = document.getElementById('post-container');
 
-            const postId = '56'; // Use your actual NIM last two digits here
+            // Replace 'xx' with the last two digits of your NIM (e.g., '89')
+            const postId = '89'; // Use your actual NIM last two digits here
             const url = `https://jsonplaceholder.typicode.com/posts/${postId}`;
 
+            // Fetch the data from the API
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
@@ -41,7 +44,7 @@
         });
     </script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
+<body class="bg-gray-100 font-sans text-gray-800 flex flex-col min-h-screen">
 
     <!-- Header -->
     <header class="bg-blue-600 text-white">
@@ -51,19 +54,19 @@
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="index.html.html" class="hover:text-gray-300">BERANDA</a></li>
-                    <li><a href="shop.html" class="hover:text-gray-300">PRODUK</a></li>
+                    <li><a href="bolulembang.html" class="hover:text-gray-300">BERANDA</a></li>
+                    <li><a href="produk.html" class="hover:text-gray-300">PRODUK</a></li>
                     <li><a href="biodata.html" class="hover:text-gray-300">BIODATA</a></li>
                     <li><a href="contact_us.html" class="hover:text-gray-300">CONTACT US</a></li>
-                    <li><a href="posts.html" class="hover:text-gray-300">POSTS</a></li>
                     <li><a href="randompage.html" class="hover:text-gray-300">RANDOM PAGE</a></li>
+                    <li><a href="posts.html" class="hover:text-gray-300">POSTS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Main Content Section -->
-    <section class="py-12 bg-white">
+    <section class="py-12 bg-white flex-grow">
         <div class="container mx-auto px-6">
             <h1 class="text-3xl font-semibold text-center text-gray-800 mb-6">Post Details</h1>
             <div id="post-container" class="flex justify-center">
@@ -75,28 +78,28 @@
 
     <!-- Footer -->
     <footer class="bg-blue-600 text-white py-6">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-        <!-- Footer Links -->
-        <div class="flex space-x-6 mb-4 md:mb-0">
-            <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
-            <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
-            <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
-        </div>
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Footer Links -->
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
+                <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
+                <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
+            </div>
 
-        <!-- Copyright Text -->
-        <p class="text-center md:text-left">© 2024 Asaryant Sabatino Talarima</p>
+            <!-- Copyright Text -->
+            <p class="text-center md:text-left">© 2024 Asaryant Sabatino Talarima</p>
 
-        <!-- Social Media Links -->
-        <div class="flex space-x-4 mt-4 md:mt-0">
-            <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank">
-                <img src="facebook-logo.png" alt="Facebook" class="h-6">
-            </a>
-            <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank">
-                <img src="instagram-logo.png" alt="Instagram" class="h-6">
-            </a>
+            <!-- Social Media Links -->
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank">
+                    <img src="facebook-logo.png" alt="Facebook" class="h-6">
+                </a>
+                <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank">
+                    <img src="instagram-logo.png" alt="Instagram" class="h-6">
+                </a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
