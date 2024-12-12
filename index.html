@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title>Welcome to my website</title>
-    </head>
-    <body>
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto flex items-center justif-between py-4">
-        <div>
-            <img src="sirclo-store-1.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolu Lembang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+    <header class="flex justify-between items-center p-5 bg-white font-mono font-bold">
+        <div class="logo">
+            <img src="logo-BSL.jpg" alt="Logo Lembang" class="h-12">
         </div>
-        <div>
-          <ul class="flex space-x-4">
-            <li><a href="/solusi" class="text-gray-600 hover:text-gray-800">Solusi</a></li>
-            <li><a href="/harga" class="text-gray-600 hover:text-gray-800">Harga</a></li>
-            <li><a href="/template" class="text-gray-600 hover:text-gray-800">Template</a></li>
-            <li><a href="/blog" class="text-gray-600 hover:text-gray-800">Blog</a></li>
-            <li><a href="/affiliate" class="text-gray-600 hover:text-gray-800">Affiliate</a></li>
-            <li><a href="/lainnya" class="text-gray-600 hover:text-gray-800">Lainnya</a></li>
-          </ul>
-        </div>
-        <div class="space-x-4">
-            <a class="bg-cyan-500 hover:bg-orange-500 active text-white px-12 py-3 rounded-lg">Coba Gratis!</a>
-            <a class="border-2 border-cyan-400 bg-white hover:bg-orange-400 active text-cyan-400 px-12 py-3 rounded-lg">Login</a>
-        </div>
+        <nav>
+            <ul class="flex space-x-5">
+                <li><a href="bolulembang.html" class="text-gray-800 hover:text-gray-500">BERANDA</a></li>
+                <li><a href="produk.html" class="text-gray-800 hover:text-gray-500">PRODUK</a></li>
+                <li><a href="biodata.html" class="text-gray-800 hover:text-gray-500">BIODATA</a></li>
+                <li><a href="contact_us.html" class="text-gray-800 hover:text-gray-500">CONTACT US</a></li>
+                <li><a href="randompage.html" class="text-gray-800 hover:text-gray-500">RANDOM PAGE</a></li>
+            </ul>
         </nav>
     </header>
-        <h1 class="text-center text-red-700 bg-yellow-400">Welcome to Asaryant Sabatino's website</h1>
-        <a class="font-bold" href="https://fti.unai.edu">FTI UNAI</a>
 
-        <div class="container mx-auto flex flex-col text-center md:flex-row">
-            <div class="bg-blue-500 basis-1/3" >A</div>
-            <div class="bg-pink-500 basis-1/3">B</div>
-            <div class="bg-green-500 basis-1/3">C</div>
-        </div>
-        <br>
-        <a class="bg-slate-900 hover:bg-blue-500 active text-white px-12 py-3 rounded-full" href="https://daisyui.com/docs/install/">How to use?</a>
+    <div class="banner">
+        <img src="BannerBSL.jpg" alt="Banner Bolu Susu Lembang" class="w-full">
+    </div>
 
-        <div class="container mx-auto py-10">
-            <div class="grid grid-cols-5 gap-10 text-zinc-400">
-                <div>
-                    <h2 class="font-bold mb-2">SIRCLO STORE</h2>
-                    <ul>
-                        <li>Fitur</li>
-                        <li>Template</li>
-                        <li>Harga</li>
-                        <li>Langganan Basic</li>
-                        <li>Toko Online Gratis</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="font-bold mb-2">SIRCLO STORE</h2>
-                    <ul>
-                        <li>Fitur</li>
-                        <li>Template</li>
-                        <li>Harga</li>
-                        <li>Langganan Basic</li>
-                        <li>Toko Online Gratis</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="font-bold mb-2">SIRCLO STORE</h2>
-                    <ul>
-                        <li>Fitur</li>
-                        <li>Template</li>
-                        <li>Harga</li>
-                        <li>Langganan Basic</li>
-                        <li>Toko Online Gratis</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="font-bold mb-2   ">SIRCLO STORE</h2>
-                    <ul>
-                        <li>Fitur</li>
-                        <li>Template</li>
-                        <li>Harga</li>
-                        <li>Langganan Basic</li>
-                        <li>Toko Online Gratis</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="font-bold mb-1">MEDIA SOSIAL</h2>
-                    <div class="mb-1">
-                        <img src="Google.png" alt="Google Play badge" width="150" height="50">
-                    </div>
-                    <div>
-                        <img src="QR.png" alt="QR code for app download" width="100" height="100">
-                    </div>
-                </div>
+    <section class="produk-pilihan py-10 text-center">
+        <h2 class="text-2xl font-bold">Produk Pilihan</h2>
+        <div class="produk-container flex justify-center gap-5 mt-5">
+            <div class="produk bg-white p-5 w-64 text-center shadow-md">
+                <img src="tiramisu.jpg" alt="Tiramisu" class="w-full h-auto mb-3">
+                <h3 class="text-lg font-light">Tiramisu</h3>
+                <p class="font-bold">Rp37.000</p>
+                <p class="text-sm">Perpaduan Bolu Susu Lembang dengan rasa kopi Italia, coklat spread yang dilengkapi crumble biskuit.</p>
             </div>
-    </body>
+            <div class="produk bg-white p-5 w-64 text-center shadow-md">
+                <img src="pancakesusucoklat.jpg" alt="Pancake Susu Lembang" class="w-full h-auto mb-3">
+                <h3 class="text-lg font-light">Pancake Susu Lembang Cokelat</h3>
+                <p class="font-bold">Rp25.000</p>
+                <p class="text-sm">Perpaduan pancake lembut dengan krim coklat yang lumer.</p>
+            </div>
+            <div class="produk bg-white p-5 w-64 text-center shadow-md">
+                <img src="originalbsl.jpg" alt="Bolu Susu Original" class="w-full h-auto mb-3">
+                <h3 class="text-lg font-light">Original</h3>
+                <p class="font-bold">Rp37.000</p>
+                <p class="text-sm">Bolu Susu Lembang rasa cokelat dan vanilla dengan topping keju.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="short-data py-10 bg-white text-center">
+        <h2 class="text-2xl font-bold">Biodata Singkat</h2>
+        <div class="SD-container flex justify-center gap-5 mt-5">
+            <a href="biodata.html" class="data-link flex items-center gap-5 bg-gray-100 p-5 w-80 shadow-md text-gray-800 hover:opacity-80">
+                <img src="fotoryan.jpg" alt="fotoryan" class="w-16 h-16 rounded-full">
+                <div class="data-text flex flex-col justify-center">
+                    <h3 class="text-lg">Ryan</h3>
+                    <p class="text-sm">Ada beberapa hal yang kusuka dan tidak kusuka tentang web development ini.</p>
+                </div>
+            </a>
+            <a href="randompage.html" class="data-link flex items-center gap-5 bg-gray-100 p-5 w-80 shadow-md text-gray-800 hover:opacity-80">
+                <video src="portal.mp4" autoplay loop muted class="w-20 h-auto rounded-full"></video>
+                <div class="data-text flex flex-col justify-center">
+                    <h3 class="text-lg">Random Page</h3>
+                    <p class="text-sm">Masuk ke dalam random page dan lihat apa saja yang ada di dalam.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-800 text-white text-center py-5">
+        <div class="footer-container">
+            <div class="mb-3">
+                <a href="https://fti.unai.edu/" target="_blank" class="text-white hover:opacity-80">FTI UNAI</a>
+                <a href="https://unai.edu/" target="_blank" class="ml-3 text-white hover:opacity-80">UNAI Website</a>
+                <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="ml-3 text-white hover:opacity-80">Jurnal Teika</a>
+            </div>
+            <p class="mb-3">&copy; 2024 Asaryant Sabatino Talarima</p>
+            <div class="social-media flex justify-center">
+                <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank" class="ml-3"><img src="facebook-logo.png" alt="Facebook" class="w-7"></a>
+                <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank" class="ml-3"><img src="instagram-logo.png" alt="Instagram" class="w-7"></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
