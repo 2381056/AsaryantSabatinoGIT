@@ -7,21 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans flex flex-col min-h-screen">
-
-    <header class="bg-blue-600 text-white shadow-lg">
+    <header class="bg-blue-600 text-white shadow-md">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <div>
                 <img src="logo-BSL.jpg" alt="Logo Lembang" class="h-12">
             </div>
-
             <nav class="hidden md:flex space-x-6">
                 <a href="bolulembang.html" class="hover:text-gray-300">BERANDA</a>
-                <a href="shop.html" class="hover:text-gray-300">PRODUK</a>
+                <a href="produk.html" class="hover:text-gray-300">PRODUK</a>
                 <a href="biodata.html" class="hover:text-gray-300">BIODATA</a>
                 <a href="contact_us.html" class="hover:text-gray-300">CONTACT US</a>
                 <a href="randompage.html" class="hover:text-gray-300">RANDOM PAGE</a>
             </nav>
-
             <button id="menu-btn" class="md:hidden text-gray-100 focus:outline-none">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -30,78 +27,73 @@
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white space-y-2 py-4 px-6">
-            <a href="index.html" class="block hover:text-gray-300">BERANDA</a>
-            <a href="shop.html" class="block hover:text-gray-300">PRODUK</a>
+            <a href="bolulembang.html" class="block hover:text-gray-300">BERANDA</a>
+            <a href="produk.html" class="block hover:text-gray-300">PRODUK</a>
             <a href="biodata.html" class="block hover:text-gray-300">BIODATA</a>
             <a href="contact_us.html" class="block hover:text-gray-300">CONTACT US</a>
             <a href="randompage.html" class="block hover:text-gray-300">RANDOM PAGE</a>
         </div>
     </header>
-
-    <section class="bg-gray-50 py-12">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Selamat Datang di BSL</h1>
-            <p class="text-gray-600 mt-4 text-lg md:text-xl">
-                Kami menyediakan informasi lengkap seputar produk terbaik dari Lembang!
-            </p>
-            <a href="produk.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700">
-                Jelajahi Produk Kami
-            </a>
-        </div>
-    </section>
-
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Tentang Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center h-[400px] md:h-[500px]" style="background-image: url('hero-image.jpg');">
+            <div class="bg-black bg-opacity-50 h-full flex items-center justify-center text-center text-white px-6">
                 <div>
-                    <img src="about-image.jpg" alt="About Us" class="rounded-lg shadow-md">
-                </div>
-                <div>
-                    <p class="text-gray-600 text-lg">
-                        BSL (Bolu Susu Lembang) adalah penyedia produk berkualitas tinggi, langsung dari Lembang. Kami berkomitmen untuk menyediakan pengalaman rasa yang terbaik melalui produk-produk kami yang dibuat dengan penuh dedikasi.
-                    </p>
-                    <p class="text-gray-600 mt-4 text-lg">
-                        Mulai dari produk unggulan hingga layanan pelanggan terbaik, kami ada di sini untuk melayani Anda.
-                    </p>
-                    <a href="biodata.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
-                        Pelajari Lebih Lanjut
+                    <h1 class="text-4xl md:text-6xl font-bold">Selamat Datang di BSL</h1>
+                    <p class="mt-4 text-lg md:text-xl">Temukan produk terbaik dan informasi menarik hanya di sini.</p>
+                    <a href="produk.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
+                        Jelajahi Produk Kami
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Tentang Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="about-image.jpg" alt="About Us" class="rounded-lg shadow-md">
+                    </div>
+                    <div>
+                        <p class="text-gray-600 text-lg">
+                            BSL (Bolu Susu Lembang) adalah penyedia produk berkualitas tinggi, langsung dari Lembang. Kami berkomitmen untuk menyediakan pengalaman rasa yang terbaik melalui produk-produk kami yang dibuat dengan penuh dedikasi.
+                        </p>
+                        <p class="text-gray-600 mt-4 text-lg">
+                            Mulai dari produk unggulan hingga layanan pelanggan terbaik, kami ada di sini untuk melayani Anda.
+                        </p>
+                        <a href="biodata.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="bg-blue-600 text-white mt-auto">
         <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
             <!-- Links -->
-            <div class="space-x-4">
+            <div class="space-x-4 text-center md:text-left">
                 <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
                 <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
                 <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
             </div>
-
-            <p class="mt-4 md:mt-0">© 2024 Asaryant Sabatino Talarima</p>
-
-            <div class="space-x-4 mt-4 md:mt-0">
+            <p class="mt-4 md:mt-0 text-center">© 2024 Asaryant Sabatino Talarima</p>
+            <div class="space-x-4 mt-4 md:mt-0 text-center">
                 <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank">
-                    <img src="facebook-logo.png" alt="Facebook" class="h-6">
+                    <img src="facebook-logo.png" alt="Facebook" class="h-6 inline">
                 </a>
                 <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank">
-                    <img src="instagram-logo.png" alt="Instagram" class="h-6">
+                    <img src="instagram-logo.png" alt="Instagram" class="h-6 inline">
                 </a>
             </div>
         </div>
     </footer>
-
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 </html>
