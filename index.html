@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
+    <title>Bolu Lembang</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans flex flex-col min-h-screen">
-    <header class="bg-blue-600 text-white shadow-md">
+    <header class="bg-blue-600 text-white shadow-md sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <div>
                 <img src="logo-BSL.jpg" alt="Logo Lembang" class="h-12">
@@ -25,7 +25,6 @@
                 </svg>
             </button>
         </div>
-
         <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white space-y-2 py-4 px-6">
             <a href="bolulembang.html" class="block hover:text-gray-300">BERANDA</a>
             <a href="produk.html" class="block hover:text-gray-300">PRODUK</a>
@@ -34,56 +33,86 @@
             <a href="randompage.html" class="block hover:text-gray-300">RANDOM PAGE</a>
         </div>
     </header>
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative bg-cover bg-center h-[400px] md:h-[500px]" style="background-image: url('hero-image.jpg');">
-            <div class="bg-black bg-opacity-50 h-full flex items-center justify-center text-center text-white px-6">
-                <div>
-                    <h1 class="text-4xl md:text-6xl font-bold">Selamat Datang di BSL</h1>
-                    <p class="mt-4 text-lg md:text-xl">Temukan produk terbaik dan informasi menarik hanya di sini.</p>
-                    <a href="produk.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
-                        Jelajahi Produk Kami
+    <div class="banner">
+        <img src="BannerBSL.jpg" alt="Banner" class="w-full h-[300px] md:h-[500px] object-cover">
+    </div>
+    <section class="produk-pilihan py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Produk Pilihan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tiramisu -->
+                <div class="produk bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+                    <img src="tiramisu.jpg" alt="Tiramisu" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold">Tiramisu</h3>
+                        <p class="text-blue-600 font-bold">Rp37.000</p>
+                        <p class="text-gray-600 mt-2">
+                            Perpaduan Bolu Susu Lembang dengan rasa kopi Italia, coklat spread yang dilengkapi crumble biskuit.
+                        </p>
+                    </div>
+                </div>
+                <div class="produk bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+                    <img src="pancakesusucoklat.jpg" alt="Pancake Susu Lembang" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold">Pancake Susu Lembang Cokelat</h3>
+                        <p class="text-blue-600 font-bold">Rp25.000</p>
+                        <p class="text-gray-600 mt-2">
+                            Perpaduan pancake lembut dengan krim coklat yang lumer.
+                        </p>
+                    </div>
+                </div>
+                <div class="produk bg-gray-50 shadow-lg rounded-lg overflow-hidden">
+                    <img src="originalbsl.jpg" alt="Bolu Susu Original" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold">Original</h3>
+                        <p class="text-blue-600 font-bold">Rp37.000</p>
+                        <p class="text-gray-600 mt-2">
+                            Bolu Susu Lembang rasa cokelat dan vanilla dengan topping keju.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="short-data py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Biodata Singkat</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-item bg-white shadow-lg rounded-lg overflow-hidden">
+                    <a href="biodata.html" class="block">
+                        <img src="fotoryan.jpg" alt="fotoryan" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold">Ryan</h3>
+                            <p class="text-gray-600">Ada beberapa hal yang kusuka dan tidak kusuka tentang web development ini.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="data-item bg-white shadow-lg rounded-lg overflow-hidden">
+                    <a href="randompage.html" class="block">
+                        <video src="portal.mp4" autoplay loop muted class="w-full h-48 object-cover"></video>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold">Random Page</h3>
+                            <p class="text-gray-600">Masuk ke dalam random page dan lihat apa saja yang ada di dalam.</p>
+                        </div>
                     </a>
                 </div>
             </div>
-        </section>
-        <section class="bg-white py-12">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Tentang Kami</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <img src="about-image.jpg" alt="About Us" class="rounded-lg shadow-md">
-                    </div>
-                    <div>
-                        <p class="text-gray-600 text-lg">
-                            BSL (Bolu Susu Lembang) adalah penyedia produk berkualitas tinggi, langsung dari Lembang. Kami berkomitmen untuk menyediakan pengalaman rasa yang terbaik melalui produk-produk kami yang dibuat dengan penuh dedikasi.
-                        </p>
-                        <p class="text-gray-600 mt-4 text-lg">
-                            Mulai dari produk unggulan hingga layanan pelanggan terbaik, kami ada di sini untuk melayani Anda.
-                        </p>
-                        <a href="biodata.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
-                            Pelajari Lebih Lanjut
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-blue-600 text-white mt-auto">
-        <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
-            <!-- Links -->
-            <div class="space-x-4 text-center md:text-left">
+        </div>
+    </section>
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-6">
+            <div class="text-center md:text-left space-x-4">
                 <a href="https://fti.unai.edu/" target="_blank" class="hover:text-gray-300">FTI UNAI</a>
                 <a href="https://unai.edu/" target="_blank" class="hover:text-gray-300">UNAI Website</a>
                 <a href="https://jurnal.unai.edu/index.php/teika" target="_blank" class="hover:text-gray-300">Jurnal Teika</a>
             </div>
-            <p class="mt-4 md:mt-0 text-center">© 2024 Asaryant Sabatino Talarima</p>
-            <div class="space-x-4 mt-4 md:mt-0 text-center">
+            <p class="text-center">© 2024 Asaryant Sabatino Talarima</p>
+            <div class="flex space-x-4">
                 <a href="https://www.facebook.com/ryan.sabatino.73?mibextid=kFxxJD" target="_blank">
-                    <img src="facebook-logo.png" alt="Facebook" class="h-6 inline">
+                    <img src="facebook-logo.png" alt="Facebook" class="h-6">
                 </a>
                 <a href="https://www.instagram.com/rian.sabatino?igsh=MXA1N3RtM2c3azBpZw==" target="_blank">
-                    <img src="instagram-logo.png" alt="Instagram" class="h-6 inline">
+                    <img src="instagram-logo.png" alt="Instagram" class="h-6">
                 </a>
             </div>
         </div>
